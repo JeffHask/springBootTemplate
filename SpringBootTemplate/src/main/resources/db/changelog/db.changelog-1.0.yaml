@@ -1,0 +1,11 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1
+      author: JeffHask
+      changes:
+        - createTable:
+            tableName: test_data
+            columns:
+            - column:
+                name: id
+                type: int
