@@ -1,17 +1,14 @@
-package com.haskovec.repository;
+package com.haskovec.data;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Table;
+import javax.persistence.*;
 
-/**
- * Created by Jeff on 6/5/2016.
- */
 @Entity
 @Table(name = "test_data")
 public class TestData {
 
     @Column(name = "id")
+    @Id
+    @GeneratedValue
     private Integer id;
 
     public Integer getId() {
